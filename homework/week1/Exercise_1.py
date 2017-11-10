@@ -19,3 +19,6 @@ def counter(input_string):
 
 count_letters = counter(sentence)
 print(count_letters.items())
+
+most_frequent_letter = max(count_letters, key=count_letters.get)
+print(most_frequent_letter)
