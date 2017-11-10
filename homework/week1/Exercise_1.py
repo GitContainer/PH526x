@@ -5,7 +5,6 @@ alphabet = string.ascii_letters
 sentence = 'Jim quickly realized that the beautiful gowns are expensive'
 
 
-# Create your function here!
 def counter(input_string):
     count_letters = {}
     for letter in input_string:
