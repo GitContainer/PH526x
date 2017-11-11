@@ -10,9 +10,8 @@ def counter(input_string):
     for letter in input_string:
         if letter in alphabet:
             if not letter in count_letters:
-                count_letters[letter] = 1
-            else:
-                count_letters[letter] += 1
+                count_letters[letter] = 0
+            count_letters[letter] += 1
     return count_letters
 
 
