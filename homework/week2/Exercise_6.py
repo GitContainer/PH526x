@@ -13,9 +13,6 @@ def row_win(board, player):
     for i in range(board.shape[0]):
         if np.all(board[i] == player):
             return True
-    for j in range(board.shape[1]):
-        if np.all(board[:, j] == player):
-            return True
     return False
 
 
