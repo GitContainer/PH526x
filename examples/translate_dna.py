@@ -4,13 +4,19 @@ Created on Sun Nov 12 17:53:59 2017
 
 @author: ahasani
 """
+def read_seq(inputfile):
+    """
+    Reads and returns the input sequence with special characters removed
+    """
+    with open(inputfile, "r") as f:
+        seq = f.read()
+        seq = seq.replace("\n", "")
+        seq = seq.replace("\r", "")
+        return seq
 
 inputfile = "dna.txt"
-f = open(inputfile, "r")
-seq = f.read()
-seq = seq.replace("\n", "")
-seq = seq.replace("\r", "")
-
+with open(inputfile, "r") as f:
+    seq = f.read()
 
 def translate(seq):
     """
