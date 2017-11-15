@@ -22,4 +22,4 @@ def count_words(text):
     return word_counts
 
 
-print(count_words(text))
+#print(count_words(text))

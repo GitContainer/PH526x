@@ -11,10 +11,10 @@ def read_book(title_path):
 
 
 text = read_book("./resources/English/shakespeare/Romeo and Juliet.txt")
-print(len(text))
+#print(len(text))
 
 ind = text.find("What's in a name?")
-print(ind)
+#print(ind)
 
 sample_text = text[ind : ind+1000]
-print(sample_text)
+#print(sample_text)
