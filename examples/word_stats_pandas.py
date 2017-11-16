@@ -21,4 +21,4 @@ for language in os.listdir(book_dir):
             stats.loc[title_num] = language, author, title, sum(counts), num_unique
             title_num += 1
 
-print(stats)
+print(stats.head())

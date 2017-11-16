@@ -12,9 +12,9 @@ def word_stats(word_counts):
 text = read_book("./resources/English/shakespeare/Romeo and Juliet.txt")
 word_counts = count_words(text)
 (num_unique, counts) = word_stats(word_counts)
-print(num_unique, sum(counts))
+# print(num_unique, sum(counts))
 
 text = read_book("./resources/German/shakespeare/Romeo und Julia.txt")
 word_counts = count_words(text)
 (num_unique, counts) = word_stats(word_counts)
-print(num_unique, sum(counts))
+# print(num_unique, sum(counts))
