@@ -15,10 +15,10 @@ for language in os.listdir(book_dir):
     for author in os.listdir(book_dir + "/" + language):
         for title in os.listdir(book_dir + "/" + language + "/" + author):
             inputfile = book_dir + "/" + language + "/" + author + "/" + title
-            # print(inputfile)
+            print(inputfile)
             text = read_book(inputfile)
             (num_unique, counts) = word_stats(count_words(text))
-            stats.loc[title_num] = language, author, title, sum(counts), num_unique
+            stats.loc[title_num] = language, author.capitalize(), title.replace(".txt", ""), sum(counts), num_unique
             title_num += 1
 
 print(stats.head())
