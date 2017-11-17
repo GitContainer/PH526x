@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from examples.word_stats_pandas import stats
+from week3.word_stats_pandas import stats
 
 plt.plot(stats.length, stats.unique, "bo")
 plt.figure(figsize=(10, 10))
