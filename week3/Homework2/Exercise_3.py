@@ -7,12 +7,11 @@ from week3.read_book import read_book
 hamlets = pd.DataFrame(columns=("language", "distribution"))
 
 book_dir = "../resources"
-book_titles = os.listdir(book_dir)
 
 title_num = 1
-for language in book_titles:
-    for author in book_titles[language]:
-        for title in book_titles[language][author]:
+for language in os.listdir(book_dir):
+    for author in os.listdir(book_dir + "/" + language):
+        for title in os.listdir(book_dir + "/" + language + "/" + author):
             if title == "Hamlet":
                 inputfile = book_dir + "/" + language + "/" + author + "/" + title
                 text = read_book(inputfile)
