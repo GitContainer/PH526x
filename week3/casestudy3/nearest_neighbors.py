@@ -19,8 +19,8 @@ def find_nearest_neighbors(p, points, k=5):
     return ind[:k]
 
 
-#ind = find_nearest_neighbors(p, points, 2)
-#print(points[ind])
+ind = find_nearest_neighbors(p, points, 2)
+print(points[ind])
 
 plt.plot(points[:, 0], points[:, 1], "ro")
 plt.plot(p[0], p[1], "bo")

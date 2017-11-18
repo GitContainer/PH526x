@@ -5,7 +5,9 @@ import numpy as np
 
 
 def knn_predict(p, points, outcomes, k=5):
+    #Find k nearest neighbors
     ind = find_nearest_neighbors(p, points, k)
+    #Predict the class of p based on majority vote
     return majority_vote(outcomes[ind])
 
 
